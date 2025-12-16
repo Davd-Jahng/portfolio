@@ -1,84 +1,51 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="모던한 분위기의 개인 포트폴리오 웹사이트">
-    <title>포트폴리오</title>
+    <meta name="description" content="A modern personal portfolio website">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" id="top">
         <div class="container header-inner">
-            <a class="brand" href="#top" aria-label="홈으로">
+            <a class="brand" href="#top" aria-label="Go to home">
                 <span class="brand-mark" aria-hidden="true"></span>
                 <span class="brand-text">inmoo</span>
             </a>
 
-            <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-nav">
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
                 <span class="nav-toggle-bars" aria-hidden="true"></span>
             </button>
 
-            <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
-                <a href="#about">소개</a>
-                <a href="#projects">프로젝트</a>
-                <a href="#contact">연락하기</a>
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
     <main id="main">
-        <section class="hero" aria-label="히어로">
+        <section class="hero" aria-label="Hero">
             <div class="container hero-grid">
                 <div class="hero-copy">
-                    <p class="pill">Frontend · UI/UX · Web</p>
-                    <h2 class="hero-title" style="font-size:2rem;">
-                        사용자 경험을<br>
-                        깔끔하게 설계하는 개발자
-                    </h2>
+                    <p class="eyebrow">Frontend Developer</p>
+                    <h1 class="hero-title">
+                        Designing clean,<br>
+                        user-first experiences
+                    </h1>
                     <p class="hero-subtitle">
-                        반응형 웹, 접근성, 성능을 고려해 작은 디테일까지 다듬습니다.
+                        I build modern, responsive interfaces with accessibility and performance in mind.
                     </p>
                     <div class="hero-cta">
-                        <a class="btn primary" href="#projects">프로젝트 보기</a>
-                        <a class="btn ghost" href="#contact">컨택하기</a>
+                        <a class="btn primary" href="#projects">View projects</a>
+                        <a class="btn ghost" href="#contact">Get in touch</a>
                     </div>
-                    <dl class="hero-metrics" aria-label="핵심 지표">
-                        <div>
-                            <dt>프로젝트</dt>
-                            <dd>3+</dd>
-                        </div>
-                        <div>
-                            <dt>관심사</dt>
-                            <dd>모던 UI</dd>
-                        </div>
-                        <div>
-                            <dt>업무 방식</dt>
-                            <dd>빠른 실험</dd>
-                        </div>
-                    </dl>
-                </div>
-
-                <div class="hero-art" aria-hidden="true">
-                    <div class="glass-card">
-                        <div class="glass-top">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <div class="glass-body">
-                            <div class="code-line w70"></div>
-                            <div class="code-line w90"></div>
-                            <div class="code-line w55"></div>
-                            <div class="code-line w80"></div>
-                            <div class="code-line w40"></div>
-                        </div>
-                    </div>
-                    <div class="orb orb-a"></div>
-                    <div class="orb orb-b"></div>
                 </div>
             </div>
         </section>
@@ -86,29 +53,29 @@
         <section class="section" id="about">
             <div class="container">
                 <div class="section-head">
-                    <h2>소개</h2>
-                    <p>짧게, 명확하게, 그리고 보기 좋게.</p>
+                    <h2>About</h2>
+                    <p>Focused on clarity, usability, and maintainable UI.</p>
                 </div>
 
                 <div class="about-grid">
                     <div class="card">
-                        <h3>저는 이런 걸 좋아해요</h3>
+                        <h3>What I do</h3>
                         <ul class="list">
-                            <li>디자인 시스템 관점의 컴포넌트</li>
-                            <li>모바일부터 데스크톱까지 자연스러운 반응형</li>
-                            <li>사용자가 “편하다” 느끼는 작은 인터랙션</li>
+                            <li>Build responsive, accessible interfaces</li>
+                            <li>Create reusable components and consistent UI patterns</li>
+                            <li>Polish details: spacing, typography, motion, and performance</li>
                         </ul>
                     </div>
                     <div class="card">
-                        <h3>기술 스택(예시)</h3>
-                        <div class="chips" aria-label="기술 스택">
-                            <span class="chip">HTML</span>
-                            <span class="chip">CSS</span>
-                            <span class="chip">JavaScript</span>
+                        <h3>Core skills</h3>
+                        <div class="chips" aria-label="Tech stack">
+                            <span class="chip">Semantic HTML</span>
+                            <span class="chip">Modern CSS</span>
+                            <span class="chip">Vanilla JavaScript</span>
                             <span class="chip">Accessibility</span>
-                            <span class="chip">Responsive UI</span>
+                            <span class="chip">Responsive design</span>
                         </div>
-                        <p class="muted">원하시면 이 부분은 본인 스택에 맞게 바로 바꿔드릴게요.</p>
+                        <p class="muted">Available for collaboration on web UI, landing pages, and product interfaces.</p>
                     </div>
                 </div>
             </div>
@@ -117,65 +84,150 @@
         <section class="section" id="projects">
             <div class="container">
                 <div class="section-head">
-                    <h2>프로젝트</h2>
-                    <p>대표 프로젝트 3개를 카드 형태로 정리했습니다.</p>
+                    <h2>Projects</h2>
+                    <p>Selected work focusing on UI quality and implementation details.</p>
                 </div>
 
                 <div class="grid cards-3">
                     <article class="project card">
                         <div class="project-thumb" aria-hidden="true">
-                            <div class="thumb-gradient g1"></div>
+                            <svg class="project-illus" viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg" role="presentation" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <linearGradient id="ill-a-bg" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0" stop-color="#141a33"/>
+                                        <stop offset="1" stop-color="#0b1020"/>
+                                    </linearGradient>
+                                    <linearGradient id="ill-a-accent" x1="0" y1="0" x2="1" y2="0">
+                                        <stop offset="0" stop-color="#7c5cff" stop-opacity=".85"/>
+                                        <stop offset="1" stop-color="#2de2e6" stop-opacity=".55"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="800" height="320" rx="0" fill="url(#ill-a-bg)"/>
+                                <g opacity=".20">
+                                    <path d="M0 260 C160 220, 240 320, 420 280 C560 250, 650 210, 800 230 L800 320 L0 320 Z" fill="url(#ill-a-accent)"/>
+                                </g>
+                                <g fill="none" stroke="rgba(255,255,255,.22)" stroke-width="2">
+                                    <rect x="94" y="70" width="612" height="190" rx="18"/>
+                                    <path d="M94 110 H706"/>
+                                    <path d="M132 95 h70"/>
+                                    <path d="M232 95 h70"/>
+                                    <path d="M332 95 h70"/>
+                                </g>
+                                <g fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2">
+                                    <path d="M150 150 H420"/>
+                                    <path d="M150 180 H520"/>
+                                    <path d="M150 210 H340"/>
+                                </g>
+                                <g fill="none" stroke="url(#ill-a-accent)" stroke-width="3" opacity=".75">
+                                    <path d="M470 208 C510 168, 560 170, 600 140 C630 118, 668 120, 690 102"/>
+                                </g>
+                                <g opacity=".10" stroke="rgba(255,255,255,.22)" stroke-width="1">
+                                    <path d="M0 40 H800"/><path d="M0 80 H800"/><path d="M0 120 H800"/><path d="M0 160 H800"/><path d="M0 200 H800"/><path d="M0 240 H800"/><path d="M0 280 H800"/>
+                                </g>
+                            </svg>
                         </div>
                         <div class="project-body">
-                            <h3>프로젝트 A</h3>
-                            <p class="muted">랜딩 페이지 리뉴얼 · 성능/UX 개선 · 반응형 최적화</p>
+                            <h3>Product Landing Refresh</h3>
+                            <p class="muted">A modern landing page with clear hierarchy, crisp typography, and responsive layout.</p>
                             <div class="chips">
-                                <span class="chip">UI</span>
+                                <span class="chip">Information architecture</span>
                                 <span class="chip">Responsive</span>
+                                <span class="chip">Performance</span>
+                            </div>
+                            <a class="link" href="#contact">Request details</a>
+                        </div>
+                    </article>
+
+                    <article class="project card">
+                        <div class="project-thumb" aria-hidden="true">
+                            <svg class="project-illus" viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg" role="presentation" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <linearGradient id="ill-b-bg" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0" stop-color="#101736"/>
+                                        <stop offset="1" stop-color="#0b1020"/>
+                                    </linearGradient>
+                                    <linearGradient id="ill-b-accent" x1="0" y1="0" x2="1" y2="0">
+                                        <stop offset="0" stop-color="#ff3d7f" stop-opacity=".65"/>
+                                        <stop offset="1" stop-color="#7c5cff" stop-opacity=".55"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="800" height="320" fill="url(#ill-b-bg)"/>
+                                <g opacity=".22">
+                                    <path d="M0 250 C140 200, 260 330, 420 270 C570 215, 650 235, 800 185 L800 320 L0 320 Z" fill="url(#ill-b-accent)"/>
+                                </g>
+                                <g fill="none" stroke="rgba(255,255,255,.22)" stroke-width="2">
+                                    <rect x="120" y="76" width="560" height="170" rx="18"/>
+                                    <path d="M160 216 V140" />
+                                    <path d="M240 216 V120" />
+                                    <path d="M320 216 V160" />
+                                    <path d="M400 216 V110" />
+                                    <path d="M480 216 V150" />
+                                    <path d="M560 216 V130" />
+                                    <path d="M120 216 H680" />
+                                </g>
+                                <g opacity=".75" fill="none" stroke="url(#ill-b-accent)" stroke-width="3">
+                                    <path d="M160 150 C230 130, 270 170, 340 150 C430 124, 470 170, 560 140 C620 120, 650 130, 680 112"/>
+                                </g>
+                                <g opacity=".10" stroke="rgba(255,255,255,.22)" stroke-width="1">
+                                    <path d="M0 40 H800"/><path d="M0 80 H800"/><path d="M0 120 H800"/><path d="M0 160 H800"/><path d="M0 200 H800"/><path d="M0 240 H800"/><path d="M0 280 H800"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="project-body">
+                            <h3>Analytics Dashboard UI</h3>
+                            <p class="muted">A dashboard layout system with scalable cards, tables, and accessible controls.</p>
+                            <div class="chips">
+                                <span class="chip">Component patterns</span>
+                                <span class="chip">Accessibility</span>
+                                <span class="chip">CSS architecture</span>
+                            </div>
+                            <a class="link" href="#contact">Request details</a>
+                        </div>
+                    </article>
+
+                    <article class="project card">
+                        <div class="project-thumb" aria-hidden="true">
+                            <svg class="project-illus" viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg" role="presentation" preserveAspectRatio="xMidYMid slice">
+                                <defs>
+                                    <linearGradient id="ill-c-bg" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0" stop-color="#0f1834"/>
+                                        <stop offset="1" stop-color="#0b1020"/>
+                                    </linearGradient>
+                                    <linearGradient id="ill-c-accent" x1="0" y1="0" x2="1" y2="0">
+                                        <stop offset="0" stop-color="#2de2e6" stop-opacity=".60"/>
+                                        <stop offset="1" stop-color="#ff3d7f" stop-opacity=".45"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="800" height="320" fill="url(#ill-c-bg)"/>
+                                <g opacity=".20">
+                                    <path d="M0 252 C180 210, 270 315, 430 270 C570 232, 660 210, 800 238 L800 320 L0 320 Z" fill="url(#ill-c-accent)"/>
+                                </g>
+                                <g fill="none" stroke="rgba(255,255,255,.20)" stroke-width="2">
+                                    <rect x="120" y="76" width="560" height="170" rx="18"/>
+                                    <path d="M180 214 C240 140, 310 238, 370 164 C430 90, 510 232, 560 154 C605 85, 640 155, 680 112"/>
+                                </g>
+                                <g fill="none" stroke="url(#ill-c-accent)" stroke-width="3" opacity=".75">
+                                    <path d="M180 214 C240 140, 310 238, 370 164 C430 90, 510 232, 560 154 C605 85, 640 155, 680 112"/>
+                                </g>
+                                <g opacity=".16" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2">
+                                    <circle cx="210" cy="140" r="14"/>
+                                    <circle cx="370" cy="164" r="14"/>
+                                    <circle cx="560" cy="154" r="14"/>
+                                </g>
+                                <g opacity=".10" stroke="rgba(255,255,255,.22)" stroke-width="1">
+                                    <path d="M0 40 H800"/><path d="M0 80 H800"/><path d="M0 120 H800"/><path d="M0 160 H800"/><path d="M0 200 H800"/><path d="M0 240 H800"/><path d="M0 280 H800"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="project-body">
+                            <h3>Interaction & Form UX</h3>
+                            <p class="muted">Micro-interactions and form validation UX designed to feel smooth and reassuring.</p>
+                            <div class="chips">
+                                <span class="chip">Interaction design</span>
+                                <span class="chip">Form UX</span>
                                 <span class="chip">Vanilla JS</span>
                             </div>
-                            <div class="project-links">
-                                <a class="link" href="#" aria-disabled="true">Demo</a>
-                                <a class="link" href="#" aria-disabled="true">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project card">
-                        <div class="project-thumb" aria-hidden="true">
-                            <div class="thumb-gradient g2"></div>
-                        </div>
-                        <div class="project-body">
-                            <h3>프로젝트 B</h3>
-                            <p class="muted">대시보드 UI · 카드/차트 레이아웃 · 접근성 개선</p>
-                            <div class="chips">
-                                <span class="chip">Design</span>
-                                <span class="chip">A11y</span>
-                                <span class="chip">CSS</span>
-                            </div>
-                            <div class="project-links">
-                                <a class="link" href="#" aria-disabled="true">Case Study</a>
-                                <a class="link" href="#" aria-disabled="true">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project card">
-                        <div class="project-thumb" aria-hidden="true">
-                            <div class="thumb-gradient g3"></div>
-                        </div>
-                        <div class="project-body">
-                            <h3>프로젝트 C</h3>
-                            <p class="muted">인터랙션 중심 페이지 · 스크롤 애니메이션 · 폼 UX</p>
-                            <div class="chips">
-                                <span class="chip">Interaction</span>
-                                <span class="chip">Form UX</span>
-                                <span class="chip">Motion</span>
-                            </div>
-                            <div class="project-links">
-                                <a class="link" href="#" aria-disabled="true">Demo</a>
-                                <a class="link" href="#" aria-disabled="true">GitHub</a>
-                            </div>
+                            <a class="link" href="#contact">Request details</a>
                         </div>
                     </article>
                 </div>
@@ -186,47 +238,35 @@
             <div class="container">
                 <div class="section-head">
                     <h2>Contact</h2>
-                    <p>아래 폼은 데모용입니다. 제출 시 브라우저에서만 검증/알림이 동작해요.</p>
+                    <p>Tell me what you’re building. I’ll reply with next steps.</p>
                 </div>
 
-                <div class="contact-grid">
-                    <div class="card contact-card">
-                        <h3>빠르게 연락하기</h3>
-                        <p class="muted">이메일/링크는 원하는 값으로 바꾸세요.</p>
-                        <div class="contact-list">
-                            <a class="contact-item" href="mailto:hello@example.com">hello@example.com</a>
-                            <a class="contact-item" href="#" aria-disabled="true">LinkedIn</a>
-                            <a class="contact-item" href="#" aria-disabled="true">GitHub</a>
-                        </div>
-                    </div>
-
-                    <form class="card form" id="contact-form" novalidate>
+                <form class="card form" id="contact-form" novalidate>
                         <div class="field">
-                            <label for="name">이름</label>
-                            <input id="name" name="name" type="text" autocomplete="name" placeholder="홍길동" required minlength="2">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required minlength="2">
                             <p class="help" data-for="name" aria-live="polite"></p>
                         </div>
 
                         <div class="field">
-                            <label for="email">이메일</label>
+                            <label for="email">Email</label>
                             <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
                             <p class="help" data-for="email" aria-live="polite"></p>
                         </div>
 
                         <div class="field">
-                            <label for="message">메시지</label>
-                            <textarea id="message" name="message" rows="5" placeholder="간단히 내용을 적어주세요." required minlength="10"></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Briefly describe your project or what you need help with." required minlength="10"></textarea>
                             <p class="help" data-for="message" aria-live="polite"></p>
                         </div>
 
                         <div class="form-actions">
-                            <button class="btn primary" type="submit">보내기</button>
-                            <button class="btn ghost" type="reset">초기화</button>
+                            <button class="btn primary" type="submit">Send</button>
+                            <button class="btn ghost" type="reset">Reset</button>
                         </div>
 
                         <p class="form-note muted" id="form-note" aria-live="polite"></p>
-                    </form>
-                </div>
+                </form>
             </div>
         </section>
     </main>
@@ -234,7 +274,7 @@
     <footer class="site-footer">
         <div class="container footer-inner">
             <small class="muted">© <span id="year"></span> inmoo. All rights reserved.</small>
-            <a class="to-top" href="#top">위로</a>
+            <a class="to-top" href="#top">Back to top</a>
         </div>
     </footer>
 </body>

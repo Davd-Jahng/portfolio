@@ -27,14 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!toggle || !nav) return;
     nav.classList.remove("is-open");
     toggle.setAttribute("aria-expanded", "false");
-    toggle.setAttribute("aria-label", "메뉴 열기");
+    toggle.setAttribute("aria-label", "Open menu");
   }
 
   function openNav() {
     if (!toggle || !nav) return;
     nav.classList.add("is-open");
     toggle.setAttribute("aria-expanded", "true");
-    toggle.setAttribute("aria-label", "메뉴 닫기");
+    toggle.setAttribute("aria-label", "Close menu");
   }
 
   if (toggle && nav) {
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const n = (name?.value || "").trim();
     if (n.length < 2) {
-      setFieldError("name", "이름은 2글자 이상 입력해 주세요.");
+      setFieldError("name", "Please enter at least 2 characters for your name.");
       ok = false;
     } else {
       setFieldError("name", "");
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const em = (email?.value || "").trim();
     if (!isValidEmail(em)) {
-      setFieldError("email", "올바른 이메일 형식으로 입력해 주세요.");
+      setFieldError("email", "Please enter a valid email address.");
       ok = false;
     } else {
       setFieldError("email", "");
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const msg = (message?.value || "").trim();
     if (msg.length < 10) {
-      setFieldError("message", "메시지는 10자 이상 입력해 주세요.");
+      setFieldError("message", "Please enter at least 10 characters.");
       ok = false;
     } else {
       setFieldError("message", "");
@@ -131,12 +131,12 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const ok = validate();
       if (!ok) {
-        setText(note, "입력값을 확인해 주세요.");
+        setText(note, "Please review the fields above.");
         return;
       }
 
-      // Demo behavior: show success and clear form
-      setText(note, "보내기 완료! (데모) 실제 전송은 서버 연동이 필요합니다.");
+      // Local-only behavior: show success and clear form
+      setText(note, "Thanks! Your message is ready. (This is a local preview—no email was sent.)");
       form.reset();
     });
   }
