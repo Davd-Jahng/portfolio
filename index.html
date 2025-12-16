@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="모던한 분위기의 개인 포트폴리오 웹사이트">
+    <title>포트폴리오</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a class="brand" href="#top" aria-label="홈으로">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <span class="brand-text">inmoo</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-nav">
+                <span class="nav-toggle-bars" aria-hidden="true"></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+                <a href="#about">소개</a>
+                <a href="#projects">프로젝트</a>
+                <a href="#contact">연락하기</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero" aria-label="히어로">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="pill">Frontend · UI/UX · Web</p>
+                    <h2 class="hero-title" style="font-size:2rem;">
+                        사용자 경험을<br>
+                        깔끔하게 설계하는 개발자
+                    </h2>
+                    <p class="hero-subtitle">
+                        반응형 웹, 접근성, 성능을 고려해 작은 디테일까지 다듬습니다.
+                    </p>
+                    <div class="hero-cta">
+                        <a class="btn primary" href="#projects">프로젝트 보기</a>
+                        <a class="btn ghost" href="#contact">컨택하기</a>
+                    </div>
+                    <dl class="hero-metrics" aria-label="핵심 지표">
+                        <div>
+                            <dt>프로젝트</dt>
+                            <dd>3+</dd>
+                        </div>
+                        <div>
+                            <dt>관심사</dt>
+                            <dd>모던 UI</dd>
+                        </div>
+                        <div>
+                            <dt>업무 방식</dt>
+                            <dd>빠른 실험</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="hero-art" aria-hidden="true">
+                    <div class="glass-card">
+                        <div class="glass-top">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="glass-body">
+                            <div class="code-line w70"></div>
+                            <div class="code-line w90"></div>
+                            <div class="code-line w55"></div>
+                            <div class="code-line w80"></div>
+                            <div class="code-line w40"></div>
+                        </div>
+                    </div>
+                    <div class="orb orb-a"></div>
+                    <div class="orb orb-b"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-head">
+                    <h2>소개</h2>
+                    <p>짧게, 명확하게, 그리고 보기 좋게.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="card">
+                        <h3>저는 이런 걸 좋아해요</h3>
+                        <ul class="list">
+                            <li>디자인 시스템 관점의 컴포넌트</li>
+                            <li>모바일부터 데스크톱까지 자연스러운 반응형</li>
+                            <li>사용자가 “편하다” 느끼는 작은 인터랙션</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>기술 스택(예시)</h3>
+                        <div class="chips" aria-label="기술 스택">
+                            <span class="chip">HTML</span>
+                            <span class="chip">CSS</span>
+                            <span class="chip">JavaScript</span>
+                            <span class="chip">Accessibility</span>
+                            <span class="chip">Responsive UI</span>
+                        </div>
+                        <p class="muted">원하시면 이 부분은 본인 스택에 맞게 바로 바꿔드릴게요.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-head">
+                    <h2>프로젝트</h2>
+                    <p>대표 프로젝트 3개를 카드 형태로 정리했습니다.</p>
+                </div>
+
+                <div class="grid cards-3">
+                    <article class="project card">
+                        <div class="project-thumb" aria-hidden="true">
+                            <div class="thumb-gradient g1"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3>프로젝트 A</h3>
+                            <p class="muted">랜딩 페이지 리뉴얼 · 성능/UX 개선 · 반응형 최적화</p>
+                            <div class="chips">
+                                <span class="chip">UI</span>
+                                <span class="chip">Responsive</span>
+                                <span class="chip">Vanilla JS</span>
+                            </div>
+                            <div class="project-links">
+                                <a class="link" href="#" aria-disabled="true">Demo</a>
+                                <a class="link" href="#" aria-disabled="true">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project card">
+                        <div class="project-thumb" aria-hidden="true">
+                            <div class="thumb-gradient g2"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3>프로젝트 B</h3>
+                            <p class="muted">대시보드 UI · 카드/차트 레이아웃 · 접근성 개선</p>
+                            <div class="chips">
+                                <span class="chip">Design</span>
+                                <span class="chip">A11y</span>
+                                <span class="chip">CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a class="link" href="#" aria-disabled="true">Case Study</a>
+                                <a class="link" href="#" aria-disabled="true">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project card">
+                        <div class="project-thumb" aria-hidden="true">
+                            <div class="thumb-gradient g3"></div>
+                        </div>
+                        <div class="project-body">
+                            <h3>프로젝트 C</h3>
+                            <p class="muted">인터랙션 중심 페이지 · 스크롤 애니메이션 · 폼 UX</p>
+                            <div class="chips">
+                                <span class="chip">Interaction</span>
+                                <span class="chip">Form UX</span>
+                                <span class="chip">Motion</span>
+                            </div>
+                            <div class="project-links">
+                                <a class="link" href="#" aria-disabled="true">Demo</a>
+                                <a class="link" href="#" aria-disabled="true">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Contact</h2>
+                    <p>아래 폼은 데모용입니다. 제출 시 브라우저에서만 검증/알림이 동작해요.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="card contact-card">
+                        <h3>빠르게 연락하기</h3>
+                        <p class="muted">이메일/링크는 원하는 값으로 바꾸세요.</p>
+                        <div class="contact-list">
+                            <a class="contact-item" href="mailto:hello@example.com">hello@example.com</a>
+                            <a class="contact-item" href="#" aria-disabled="true">LinkedIn</a>
+                            <a class="contact-item" href="#" aria-disabled="true">GitHub</a>
+                        </div>
+                    </div>
+
+                    <form class="card form" id="contact-form" novalidate>
+                        <div class="field">
+                            <label for="name">이름</label>
+                            <input id="name" name="name" type="text" autocomplete="name" placeholder="홍길동" required minlength="2">
+                            <p class="help" data-for="name" aria-live="polite"></p>
+                        </div>
+
+                        <div class="field">
+                            <label for="email">이메일</label>
+                            <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+                            <p class="help" data-for="email" aria-live="polite"></p>
+                        </div>
+
+                        <div class="field">
+                            <label for="message">메시지</label>
+                            <textarea id="message" name="message" rows="5" placeholder="간단히 내용을 적어주세요." required minlength="10"></textarea>
+                            <p class="help" data-for="message" aria-live="polite"></p>
+                        </div>
+
+                        <div class="form-actions">
+                            <button class="btn primary" type="submit">보내기</button>
+                            <button class="btn ghost" type="reset">초기화</button>
+                        </div>
+
+                        <p class="form-note muted" id="form-note" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <small class="muted">© <span id="year"></span> inmoo. All rights reserved.</small>
+            <a class="to-top" href="#top">위로</a>
+        </div>
+    </footer>
+</body>
+</html>
