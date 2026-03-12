@@ -9,7 +9,7 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-en="Skip to content" data-ko="본문으로 이동">Skip to content</a>
 
     <header class="site-header" id="top">
         <div class="container header-inner">
@@ -23,9 +23,14 @@
             </button>
 
             <nav class="site-nav" id="site-nav" aria-label="Primary">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <button class="lang-toggle" id="lang-toggle" type="button" aria-label="한국어로 변경">
+                    <span class="lang-opt" data-lang="ko">한</span>
+                    <span class="lang-sep">/</span>
+                    <span class="lang-opt active" data-lang="en">EN</span>
+                </button>
+                <a href="#about" data-en="About" data-ko="소개">About</a>
+                <a href="#projects" data-en="Projects" data-ko="프로젝트">Projects</a>
+                <a href="#contact" data-en="Contact" data-ko="연락처">Contact</a>
             </nav>
         </div>
     </header>
@@ -34,18 +39,108 @@
         <section class="hero" aria-label="Hero">
             <div class="container hero-grid">
                 <div class="hero-copy">
-                    <p class="eyebrow">Frontend Developer</p>
+                    <p class="eyebrow" data-en="Frontend Developer" data-ko="프론트엔드 개발자">Frontend Developer</p>
                     <h1 class="hero-title">
-                        Designing clean,<br>
-                        user-first experiences
+                        <span data-en="Designing clean," data-ko="명확하고,">Designing clean,</span><br>
+                        <span data-en="user-first experiences" data-ko="사용자 중심의 경험 설계">user-first experiences</span>
                     </h1>
-                    <p class="hero-subtitle">
+                    <p class="hero-subtitle" data-en="I build modern, responsive interfaces with accessibility and performance in mind." data-ko="접근성과 성능을 고려한 모던하고 반응형 인터페이스를 구축합니다.">
                         I build modern, responsive interfaces with accessibility and performance in mind.
                     </p>
                     <div class="hero-cta">
-                        <a class="btn primary" href="#projects">View projects</a>
-                        <a class="btn ghost" href="#contact">Get in touch</a>
+                        <a class="btn primary" href="#projects" data-en="View projects" data-ko="프로젝트 보기">View projects</a>
+                        <a class="btn ghost" href="#contact" data-en="Get in touch" data-ko="연락하기">Get in touch</a>
                     </div>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <svg class="hero-illus" viewBox="0 0 480 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="hg-orb" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%"   stop-color="#7c5cff" stop-opacity=".16"/>
+                                <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
+                            </radialGradient>
+                            <linearGradient id="hg-card" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%"   stop-color="#7c5cff" stop-opacity=".38"/>
+                                <stop offset="100%" stop-color="#2de2e6" stop-opacity=".28"/>
+                            </linearGradient>
+                            <linearGradient id="hg-panel" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%"   stop-color="#7c5cff" stop-opacity=".18"/>
+                                <stop offset="100%" stop-color="#2de2e6" stop-opacity=".12"/>
+                            </linearGradient>
+                            <filter id="hf-main">
+                                <feDropShadow dx="0" dy="14" stdDeviation="28" flood-color="#7c5cff" flood-opacity=".13"/>
+                            </filter>
+                            <filter id="hf-float">
+                                <feDropShadow dx="0" dy="6"  stdDeviation="14" flood-color="#7c5cff" flood-opacity=".12"/>
+                            </filter>
+                        </defs>
+
+                        <!-- Background glow -->
+                        <ellipse cx="240" cy="195" rx="222" ry="200" fill="url(#hg-orb)"/>
+
+                        <!-- Main browser card -->
+                        <rect x="58" y="34" width="344" height="238" rx="22" fill="white" filter="url(#hf-main)"/>
+                        <!-- Top bar -->
+                        <rect x="58" y="34" width="344" height="48" rx="22" fill="#f3f0ff"/>
+                        <rect x="58" y="58" width="344" height="24" fill="#f3f0ff"/>
+                        <!-- Window controls -->
+                        <circle cx="86"  cy="58" r="7" fill="#ff3d7f" opacity=".65"/>
+                        <circle cx="108" cy="58" r="7" fill="#ffc107" opacity=".65"/>
+                        <circle cx="130" cy="58" r="7" fill="#2de2e6" opacity=".65"/>
+                        <!-- Address bar -->
+                        <rect x="152" y="49" width="206" height="18" rx="9" fill="rgba(124,92,255,.10)"/>
+
+                        <!-- Left column: code lines -->
+                        <rect x="86" y="106" width="118" height="10" rx="5"   fill="rgba(124,92,255,.45)"/>
+                        <rect x="86" y="128" width="172" height="8"  rx="4"   fill="rgba(22,18,46,.10)"/>
+                        <rect x="86" y="146" width="142" height="8"  rx="4"   fill="rgba(22,18,46,.07)"/>
+                        <rect x="86" y="164" width="78"  height="8"  rx="4"   fill="rgba(45,226,230,.55)"/>
+                        <rect x="86" y="182" width="128" height="8"  rx="4"   fill="rgba(22,18,46,.07)"/>
+                        <rect x="86" y="200" width="96"  height="8"  rx="4"   fill="rgba(255,61,127,.30)"/>
+                        <rect x="86" y="218" width="152" height="8"  rx="4"   fill="rgba(22,18,46,.07)"/>
+                        <!-- CTA bar -->
+                        <rect x="86" y="242" width="104" height="22" rx="11"  fill="url(#hg-card)"/>
+
+                        <!-- Right panel -->
+                        <rect x="264" y="94"  width="118" height="164" rx="14" fill="url(#hg-panel)"/>
+                        <rect x="276" y="106" width="94"  height="68"  rx="10" fill="url(#hg-card)"/>
+                        <!-- Mini bar chart inside panel -->
+                        <rect x="284" y="152" width="11" height="18" rx="3" fill="white" opacity=".55"/>
+                        <rect x="301" y="140" width="11" height="30" rx="3" fill="white" opacity=".55"/>
+                        <rect x="318" y="132" width="11" height="38" rx="3" fill="white" opacity=".55"/>
+                        <rect x="335" y="144" width="11" height="26" rx="3" fill="white" opacity=".55"/>
+                        <!-- Panel text lines -->
+                        <rect x="276" y="188" width="94" height="8"  rx="4"   fill="rgba(22,18,46,.12)"/>
+                        <rect x="276" y="202" width="66" height="7"  rx="3.5" fill="rgba(22,18,46,.08)"/>
+                        <rect x="276" y="230" width="94" height="16" rx="8"   fill="rgba(124,92,255,.22)"/>
+
+                        <!-- Floating card: bottom-left -->
+                        <rect x="10" y="244" width="114" height="76" rx="18" fill="white" filter="url(#hf-float)"/>
+                        <circle cx="36"  cy="268" r="14" fill="rgba(124,92,255,.12)"/>
+                        <circle cx="36"  cy="268" r="6"  fill="rgba(124,92,255,.55)"/>
+                        <rect x="56" y="260" width="54" height="8"  rx="4"   fill="rgba(22,18,46,.13)"/>
+                        <rect x="56" y="274" width="38" height="7"  rx="3.5" fill="rgba(22,18,46,.08)"/>
+                        <rect x="24" y="296" width="86" height="14" rx="7"   fill="rgba(45,226,230,.32)"/>
+
+                        <!-- Floating card: right -->
+                        <rect x="378" y="190" width="96" height="84" rx="18" fill="white" filter="url(#hf-float)"/>
+                        <!-- Donut chart -->
+                        <circle cx="404" cy="218" r="17" fill="none" stroke="rgba(124,92,255,.15)" stroke-width="9"/>
+                        <circle cx="404" cy="218" r="17" fill="none" stroke="rgba(124,92,255,.75)" stroke-width="9"
+                                stroke-dasharray="54 107" stroke-dashoffset="0" transform="rotate(-90 404 218)"/>
+                        <rect x="426" y="210" width="36" height="8"  rx="4"   fill="rgba(22,18,46,.12)"/>
+                        <rect x="426" y="224" width="24" height="7"  rx="3.5" fill="rgba(22,18,46,.08)"/>
+                        <rect x="384" y="254" width="80" height="12" rx="6"   fill="rgba(255,61,127,.22)"/>
+
+                        <!-- Decorative dots -->
+                        <circle cx="40"  cy="358" r="7" fill="rgba(124,92,255,.20)"/>
+                        <circle cx="60"  cy="376" r="4" fill="rgba(45,226,230,.16)"/>
+                        <circle cx="24"  cy="378" r="3" fill="rgba(255,61,127,.14)"/>
+                        <circle cx="434" cy="348" r="5" fill="rgba(45,226,230,.20)"/>
+                        <circle cx="452" cy="364" r="8" fill="rgba(124,92,255,.12)"/>
+                        <circle cx="418" cy="372" r="3" fill="rgba(255,61,127,.14)"/>
+                    </svg>
                 </div>
             </div>
         </section>
@@ -53,29 +148,29 @@
         <section class="section" id="about">
             <div class="container">
                 <div class="section-head">
-                    <h2>About</h2>
-                    <p>Focused on clarity, usability, and maintainable UI.</p>
+                    <h2 data-en="About" data-ko="소개">About</h2>
+                    <p data-en="Focused on clarity, usability, and maintainable UI." data-ko="명확성, 사용성, 유지보수 가능한 UI에 집중합니다.">Focused on clarity, usability, and maintainable UI.</p>
                 </div>
 
                 <div class="about-grid">
                     <div class="card">
-                        <h3>What I do</h3>
+                        <h3 data-en="What I do" data-ko="하는 일">What I do</h3>
                         <ul class="list">
-                            <li>Build responsive, accessible interfaces</li>
-                            <li>Create reusable components and consistent UI patterns</li>
-                            <li>Polish details: spacing, typography, motion, and performance</li>
+                            <li data-en="Build responsive, accessible interfaces" data-ko="반응형, 접근성 있는 인터페이스 구축">Build responsive, accessible interfaces</li>
+                            <li data-en="Create reusable components and consistent UI patterns" data-ko="재사용 가능한 컴포넌트와 일관된 UI 패턴 구현">Create reusable components and consistent UI patterns</li>
+                            <li data-en="Polish details: spacing, typography, motion, and performance" data-ko="디테일 다듬기: 간격, 타이포그래피, 모션, 성능">Polish details: spacing, typography, motion, and performance</li>
                         </ul>
                     </div>
                     <div class="card">
-                        <h3>Core skills</h3>
+                        <h3 data-en="Core skills" data-ko="핵심 기술">Core skills</h3>
                         <div class="chips" aria-label="Tech stack">
-                            <span class="chip">Semantic HTML</span>
-                            <span class="chip">Modern CSS</span>
-                            <span class="chip">Vanilla JavaScript</span>
-                            <span class="chip">Accessibility</span>
-                            <span class="chip">Responsive design</span>
+                            <span class="chip" data-en="Semantic HTML" data-ko="시맨틱 HTML">Semantic HTML</span>
+                            <span class="chip" data-en="Modern CSS" data-ko="모던 CSS">Modern CSS</span>
+                            <span class="chip" data-en="Vanilla JavaScript" data-ko="바닐라 JavaScript">Vanilla JavaScript</span>
+                            <span class="chip" data-en="Accessibility" data-ko="접근성">Accessibility</span>
+                            <span class="chip" data-en="Responsive design" data-ko="반응형 디자인">Responsive design</span>
                         </div>
-                        <p class="muted">Available for collaboration on web UI, landing pages, and product interfaces.</p>
+                        <p class="muted" data-en="Available for collaboration on web UI, landing pages, and product interfaces." data-ko="웹 UI, 랜딩 페이지, 제품 인터페이스 협업 가능합니다.">Available for collaboration on web UI, landing pages, and product interfaces.</p>
                     </div>
                 </div>
             </div>
@@ -84,8 +179,8 @@
         <section class="section" id="projects">
             <div class="container">
                 <div class="section-head">
-                    <h2>Projects</h2>
-                    <p>Selected work focusing on UI quality and implementation details.</p>
+                    <h2 data-en="Projects" data-ko="프로젝트">Projects</h2>
+                    <p data-en="Selected work focusing on UI quality and implementation details." data-ko="UI 품질과 구현 디테일에 집중한 선별된 작업물입니다.">Selected work focusing on UI quality and implementation details.</p>
                 </div>
 
                 <div class="grid cards-3">
@@ -127,14 +222,14 @@
                             </svg>
                         </div>
                         <div class="project-body">
-                            <h3>Product Landing Refresh</h3>
-                            <p class="muted">A modern landing page with clear hierarchy, crisp typography, and responsive layout.</p>
+                            <h3 data-en="Product Landing Refresh" data-ko="제품 랜딩 리프레시">Product Landing Refresh</h3>
+                            <p class="muted" data-en="A modern landing page with clear hierarchy, crisp typography, and responsive layout." data-ko="명확한 계층 구조, 깔끔한 타이포그래피, 반응형 레이아웃을 갖춘 모던 랜딩 페이지.">A modern landing page with clear hierarchy, crisp typography, and responsive layout.</p>
                             <div class="chips">
-                                <span class="chip">Information architecture</span>
-                                <span class="chip">Responsive</span>
-                                <span class="chip">Performance</span>
+                                <span class="chip" data-en="Information architecture" data-ko="정보 구조">Information architecture</span>
+                                <span class="chip" data-en="Responsive" data-ko="반응형">Responsive</span>
+                                <span class="chip" data-en="Performance" data-ko="성능">Performance</span>
                             </div>
-                            <a class="link" href="#contact">Request details</a>
+                            <a class="link" href="#contact" data-en="Request details" data-ko="상세 문의">Request details</a>
                         </div>
                     </article>
 
@@ -174,14 +269,14 @@
                             </svg>
                         </div>
                         <div class="project-body">
-                            <h3>Analytics Dashboard UI</h3>
-                            <p class="muted">A dashboard layout system with scalable cards, tables, and accessible controls.</p>
+                            <h3 data-en="Analytics Dashboard UI" data-ko="분석 대시보드 UI">Analytics Dashboard UI</h3>
+                            <p class="muted" data-en="A dashboard layout system with scalable cards, tables, and accessible controls." data-ko="확장 가능한 카드, 테이블, 접근성 있는 컨트롤을 갖춘 대시보드 레이아웃 시스템.">A dashboard layout system with scalable cards, tables, and accessible controls.</p>
                             <div class="chips">
-                                <span class="chip">Component patterns</span>
-                                <span class="chip">Accessibility</span>
-                                <span class="chip">CSS architecture</span>
+                                <span class="chip" data-en="Component patterns" data-ko="컴포넌트 패턴">Component patterns</span>
+                                <span class="chip" data-en="Accessibility" data-ko="접근성">Accessibility</span>
+                                <span class="chip" data-en="CSS architecture" data-ko="CSS 아키텍처">CSS architecture</span>
                             </div>
-                            <a class="link" href="#contact">Request details</a>
+                            <a class="link" href="#contact" data-en="Request details" data-ko="상세 문의">Request details</a>
                         </div>
                     </article>
 
@@ -220,14 +315,14 @@
                             </svg>
                         </div>
                         <div class="project-body">
-                            <h3>Interaction & Form UX</h3>
-                            <p class="muted">Micro-interactions and form validation UX designed to feel smooth and reassuring.</p>
+                            <h3 data-en="Interaction &amp; Form UX" data-ko="인터랙션 &amp; 폼 UX">Interaction &amp; Form UX</h3>
+                            <p class="muted" data-en="Micro-interactions and form validation UX designed to feel smooth and reassuring." data-ko="부드럽고 안정감 있는 마이크로 인터랙션과 폼 유효성 검사 UX.">Micro-interactions and form validation UX designed to feel smooth and reassuring.</p>
                             <div class="chips">
-                                <span class="chip">Interaction design</span>
-                                <span class="chip">Form UX</span>
-                                <span class="chip">Vanilla JS</span>
+                                <span class="chip" data-en="Interaction design" data-ko="인터랙션 디자인">Interaction design</span>
+                                <span class="chip" data-en="Form UX" data-ko="폼 UX">Form UX</span>
+                                <span class="chip" data-en="Vanilla JS" data-ko="바닐라 JS">Vanilla JS</span>
                             </div>
-                            <a class="link" href="#contact">Request details</a>
+                            <a class="link" href="#contact" data-en="Request details" data-ko="상세 문의">Request details</a>
                         </div>
                     </article>
                 </div>
@@ -237,32 +332,44 @@
         <section class="section" id="contact">
             <div class="container">
                 <div class="section-head">
-                    <h2>Contact</h2>
-                    <p>Tell me what you’re building. I’ll reply with next steps.</p>
+                    <h2 data-en="Contact" data-ko="연락처">Contact</h2>
+                    <p data-en="Tell me what you're building. I'll reply with next steps." data-ko="어떤 걸 만들고 있는지 알려주세요. 다음 단계를 답변해 드리겠습니다.">Tell me what you're building. I'll reply with next steps.</p>
                 </div>
 
                 <form class="card form" id="contact-form" novalidate>
                         <div class="field">
-                            <label for="name">Name</label>
-                            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required minlength="2">
+                            <label for="name" data-en="Name" data-ko="이름">Name</label>
+                            <input id="name" name="name" type="text" autocomplete="name"
+                                   placeholder="Your name"
+                                   data-en-placeholder="Your name"
+                                   data-ko-placeholder="이름을 입력하세요"
+                                   required minlength="2">
                             <p class="help" data-for="name" aria-live="polite"></p>
                         </div>
 
                         <div class="field">
-                            <label for="email">Email</label>
-                            <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+                            <label for="email" data-en="Email" data-ko="이메일">Email</label>
+                            <input id="email" name="email" type="email" autocomplete="email"
+                                   placeholder="name@example.com"
+                                   data-en-placeholder="name@example.com"
+                                   data-ko-placeholder="name@example.com"
+                                   required>
                             <p class="help" data-for="email" aria-live="polite"></p>
                         </div>
 
                         <div class="field">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Briefly describe your project or what you need help with." required minlength="10"></textarea>
+                            <label for="message" data-en="Message" data-ko="메시지">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                      placeholder="Briefly describe your project or what you need help with."
+                                      data-en-placeholder="Briefly describe your project or what you need help with."
+                                      data-ko-placeholder="프로젝트나 도움이 필요한 내용을 간략히 설명해 주세요."
+                                      required minlength="10"></textarea>
                             <p class="help" data-for="message" aria-live="polite"></p>
                         </div>
 
                         <div class="form-actions">
-                            <button class="btn primary" type="submit">Send</button>
-                            <button class="btn ghost" type="reset">Reset</button>
+                            <button class="btn primary" type="submit" data-en="Send" data-ko="보내기">Send</button>
+                            <button class="btn ghost" type="reset" data-en="Reset" data-ko="초기화">Reset</button>
                         </div>
 
                         <p class="form-note muted" id="form-note" aria-live="polite"></p>
@@ -273,8 +380,8 @@
 
     <footer class="site-footer">
         <div class="container footer-inner">
-            <small class="muted">© <span id="year"></span> inmoo. All rights reserved.</small>
-            <a class="to-top" href="#top">Back to top</a>
+            <small class="muted">© <span id="year"></span> inmoo. <span data-en="All rights reserved." data-ko="모든 권리 보유.">All rights reserved.</span></small>
+            <a class="to-top" href="#top" data-en="Back to top" data-ko="맨 위로">Back to top</a>
         </div>
     </footer>
 </body>
