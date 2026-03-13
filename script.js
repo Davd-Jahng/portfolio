@@ -73,24 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Apply saved language preference
   applyLang(currentLang);
 
-  // Back to top
-  const toTopBtn = qs(".to-top");
-  if (toTopBtn) {
-    toTopBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
-
-  // Brand logo → top
-  const brand = qs(".brand");
-  if (brand) {
-    brand.addEventListener("click", (e) => {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
-
   // Language toggle button
   const langToggle = qs("#lang-toggle");
   if (langToggle) {
