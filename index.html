@@ -52,6 +52,192 @@
                         <a class="btn ghost" href="#contact" data-en="Get in touch" data-ko="연락하기">Get in touch</a>
                     </div>
                 </div>
+
+                <!-- Developer code-editor illustration -->
+                <div class="hero-visual" aria-hidden="true">
+                    <svg class="hero-illus" viewBox="0 0 560 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="ed-status" x1="0" y1="0" x2="1" y2="0">
+                                <stop offset="0%"   stop-color="#7c5cff"/>
+                                <stop offset="100%" stop-color="#2de2e6"/>
+                            </linearGradient>
+                            <clipPath id="ed-clip">
+                                <rect width="560" height="430" rx="16"/>
+                            </clipPath>
+                        </defs>
+
+                        <g clip-path="url(#ed-clip)">
+                            <!-- Window background -->
+                            <rect width="560" height="430" fill="#12121e"/>
+
+                            <!-- Title bar -->
+                            <rect width="560" height="40" fill="#0d0d1a"/>
+                            <!-- Traffic lights -->
+                            <circle cx="22" cy="20" r="6" fill="#ff5f57"/>
+                            <circle cx="42" cy="20" r="6" fill="#febc2e"/>
+                            <circle cx="62" cy="20" r="6" fill="#28c840"/>
+                            <!-- Active tab -->
+                            <rect x="88" y="8" width="116" height="26" rx="6" fill="#1a1a2c"/>
+                            <circle cx="103" cy="21" r="5" fill="rgba(45,226,230,.7)"/>
+                            <rect x="113" y="17" width="66" height="7" rx="3.5" fill="rgba(255,255,255,.55)"/>
+                            <!-- Inactive tab -->
+                            <rect x="210" y="12" width="90" height="18" rx="5" fill="rgba(255,255,255,.04)"/>
+                            <rect x="222" y="17" width="55" height="6" rx="3" fill="rgba(255,255,255,.25)"/>
+
+                            <!-- Sidebar -->
+                            <rect x="0" y="40" width="140" height="354" fill="#0f0f1c"/>
+                            <!-- Explorer label -->
+                            <rect x="14" y="58" width="68" height="6" rx="3" fill="rgba(255,255,255,.22)"/>
+
+                            <!-- File tree -->
+                            <!-- src/ folder -->
+                            <rect x="14" y="78"  width="9"  height="9"  rx="2" fill="rgba(254,188,46,.75)"/>
+                            <rect x="28" y="80"  width="44" height="6"  rx="3" fill="rgba(255,255,255,.45)"/>
+                            <!-- ├ App.jsx (active) -->
+                            <rect x="0"  y="95"  width="140" height="18" fill="rgba(255,255,255,.05)"/>
+                            <rect x="22" y="98"  width="7"   height="9"  rx="2" fill="rgba(45,226,230,.9)"/>
+                            <rect x="34" y="100" width="58" height="6"  rx="3" fill="rgba(255,255,255,.75)"/>
+                            <!-- ├ styles.css -->
+                            <rect x="22" y="116" width="7"  height="9"  rx="2" fill="rgba(124,92,255,.9)"/>
+                            <rect x="34" y="118" width="64" height="6"  rx="3" fill="rgba(255,255,255,.4)"/>
+                            <!-- ├ index.html -->
+                            <rect x="22" y="134" width="7"  height="9"  rx="2" fill="rgba(255,61,127,.8)"/>
+                            <rect x="34" y="136" width="60" height="6"  rx="3" fill="rgba(255,255,255,.4)"/>
+                            <!-- components/ folder -->
+                            <rect x="14" y="154" width="9"  height="9"  rx="2" fill="rgba(254,188,46,.75)"/>
+                            <rect x="28" y="156" width="80" height="6"  rx="3" fill="rgba(255,255,255,.4)"/>
+                            <!-- ├ Hero.jsx -->
+                            <rect x="22" y="172" width="7"  height="9"  rx="2" fill="rgba(45,226,230,.65)"/>
+                            <rect x="34" y="174" width="52" height="6"  rx="3" fill="rgba(255,255,255,.35)"/>
+                            <!-- ├ Nav.jsx -->
+                            <rect x="22" y="190" width="7"  height="9"  rx="2" fill="rgba(45,226,230,.65)"/>
+                            <rect x="34" y="192" width="45" height="6"  rx="3" fill="rgba(255,255,255,.35)"/>
+                            <!-- ├ Card.jsx -->
+                            <rect x="22" y="208" width="7"  height="9"  rx="2" fill="rgba(45,226,230,.65)"/>
+                            <rect x="34" y="210" width="50" height="6"  rx="3" fill="rgba(255,255,255,.35)"/>
+                            <!-- package.json -->
+                            <rect x="14" y="228" width="7"  height="9"  rx="2" fill="rgba(255,184,0,.8)"/>
+                            <rect x="26" y="230" width="72" height="6"  rx="3" fill="rgba(255,255,255,.35)"/>
+
+                            <!-- Editor area -->
+                            <rect x="140" y="40" width="420" height="280" fill="#1a1a2c"/>
+                            <!-- Active line highlight -->
+                            <rect x="140" y="118" width="420" height="16" fill="rgba(124,92,255,.08)"/>
+                            <!-- Line numbers bg -->
+                            <rect x="140" y="40" width="38" height="280" fill="rgba(0,0,0,.18)"/>
+
+                            <!-- === CODE LINES === -->
+                            <!-- L1: import React from 'react' -->
+                            <rect x="150" y="56"  width="8"  height="6" rx="2" fill="rgba(255,255,255,.18)"/>
+                            <rect x="190" y="56"  width="34" height="7" rx="3.5" fill="rgba(124,92,255,.85)"/>
+                            <rect x="230" y="56"  width="30" height="7" rx="3.5" fill="rgba(255,255,255,.55)"/>
+                            <rect x="266" y="56"  width="20" height="7" rx="3.5" fill="rgba(124,92,255,.85)"/>
+                            <rect x="292" y="56"  width="44" height="7" rx="3.5" fill="rgba(45,226,230,.9)"/>
+
+                            <!-- L2: import { useState } from 'react' -->
+                            <rect x="150" y="74"  width="8"  height="6" rx="2" fill="rgba(255,255,255,.18)"/>
+                            <rect x="190" y="74"  width="34" height="7" rx="3.5" fill="rgba(124,92,255,.85)"/>
+                            <rect x="230" y="74"  width="56" height="7" rx="3.5" fill="rgba(255,184,0,.85)"/>
+                            <rect x="292" y="74"  width="20" height="7" rx="3.5" fill="rgba(124,92,255,.85)"/>
+                            <rect x="318" y="74"  width="44" height="7" rx="3.5" fill="rgba(45,226,230,.9)"/>
+
+                            <!-- L3: blank -->
+
+                            <!-- L4: const Portfolio = () => { -->
+                            <rect x="150" y="102" width="8"  height="6" rx="2" fill="rgba(255,255,255,.18)"/>
+                            <rect x="190" y="102" width="28" height="7" rx="3.5" fill="rgba(124,92,255,.85)"/>
+                            <rect x="224" y="102" width="56" height="7" rx="3.5" fill="rgba(45,226,230,.75)"/>
+                            <rect x="286" y="102" width="10" height="7" rx="3.5" fill="rgba(255,255,255,.4)"/>
+                            <rect x="302" y="102" width="14" height="7" rx="3.5" fill="rgba(254,188,46,.9)"/>
+                            <rect x="322" y="102" width="16" height="7" rx="3.5" fill="rgba(124,92,255,.85)"/>
+                            <rect x="344" y="102" width="10" height="7" rx="3.5" fill="rgba(255,255,255,.4)"/>
+
+                            <!-- L5: const [lang, setLang] = useState('en') -->
+                            <rect x="150" y="120" width="8"  height="6" rx="2" fill="rgba(255,255,255,.18)"/>
+                            <rect x="198" y="120" width="28" height="7" rx="3.5" fill="rgba(124,92,255,.85)"/>
+                            <rect x="232" y="120" width="72" height="7" rx="3.5" fill="rgba(255,255,255,.5)"/>
+                            <rect x="310" y="120" width="10" height="7" rx="3.5" fill="rgba(255,255,255,.4)"/>
+                            <rect x="326" y="120" width="48" height="7" rx="3.5" fill="rgba(254,188,46,.9)"/>
+                            <rect x="380" y="120" width="36" height="7" rx="3.5" fill="rgba(45,226,230,.9)"/>
+
+                            <!-- L6: return ( -->
+                            <rect x="150" y="138" width="9"  height="6" rx="2" fill="rgba(255,255,255,.18)"/>
+                            <rect x="198" y="138" width="34" height="7" rx="3.5" fill="rgba(124,92,255,.85)"/>
+                            <rect x="238" y="138" width="10" height="7" rx="3.5" fill="rgba(255,255,255,.4)"/>
+
+                            <!-- L7: <section className="hero"> -->
+                            <rect x="150" y="156" width="9"  height="6" rx="2" fill="rgba(255,255,255,.18)"/>
+                            <rect x="206" y="156" width="10" height="7" rx="3.5" fill="rgba(255,255,255,.4)"/>
+                            <rect x="220" y="156" width="44" height="7" rx="3.5" fill="rgba(255,61,127,.85)"/>
+                            <rect x="270" y="156" width="62" height="7" rx="3.5" fill="rgba(254,188,46,.8)"/>
+                            <rect x="338" y="156" width="54" height="7" rx="3.5" fill="rgba(45,226,230,.9)"/>
+
+                            <!-- L8: <h1>Designing clean,</h1> -->
+                            <rect x="150" y="174" width="9"  height="6" rx="2" fill="rgba(255,255,255,.18)"/>
+                            <rect x="214" y="174" width="26" height="7" rx="3.5" fill="rgba(255,61,127,.85)"/>
+                            <rect x="246" y="174" width="90" height="7" rx="3.5" fill="rgba(255,255,255,.55)"/>
+                            <rect x="342" y="174" width="32" height="7" rx="3.5" fill="rgba(255,61,127,.85)"/>
+
+                            <!-- L9: <p>user-first experiences</p> -->
+                            <rect x="150" y="192" width="9"  height="6" rx="2" fill="rgba(255,255,255,.18)"/>
+                            <rect x="214" y="192" width="22" height="7" rx="3.5" fill="rgba(255,61,127,.85)"/>
+                            <rect x="242" y="192" width="108" height="7" rx="3.5" fill="rgba(255,255,255,.55)"/>
+                            <rect x="356" y="192" width="24" height="7" rx="3.5" fill="rgba(255,61,127,.85)"/>
+
+                            <!-- L10: </section> -->
+                            <rect x="150" y="210" width="10" height="6" rx="2" fill="rgba(255,255,255,.18)"/>
+                            <rect x="198" y="210" width="58" height="7" rx="3.5" fill="rgba(255,61,127,.85)"/>
+
+                            <!-- L11: ) -->
+                            <rect x="150" y="228" width="10" height="6" rx="2" fill="rgba(255,255,255,.18)"/>
+                            <rect x="190" y="228" width="10" height="7" rx="3.5" fill="rgba(255,255,255,.4)"/>
+
+                            <!-- L12: } + cursor -->
+                            <rect x="150" y="246" width="11" height="6" rx="2" fill="rgba(255,255,255,.18)"/>
+                            <rect x="190" y="246" width="10" height="7" rx="3.5" fill="rgba(255,255,255,.4)"/>
+
+                            <!-- L13: blank -->
+
+                            <!-- L14: export default Portfolio -->
+                            <rect x="150" y="280" width="11" height="6" rx="2" fill="rgba(255,255,255,.18)"/>
+                            <rect x="190" y="280" width="34" height="7" rx="3.5" fill="rgba(124,92,255,.85)"/>
+                            <rect x="230" y="280" width="36" height="7" rx="3.5" fill="rgba(124,92,255,.85)"/>
+                            <rect x="272" y="280" width="56" height="7" rx="3.5" fill="rgba(45,226,230,.75)"/>
+                            <!-- Blinking cursor -->
+                            <rect class="hero-cursor" x="334" y="279" width="2" height="12" rx="1" fill="rgba(255,255,255,.85)"/>
+
+                            <!-- Terminal panel -->
+                            <rect x="140" y="320" width="420" height="72" fill="#0c0c18"/>
+                            <!-- Panel title bar -->
+                            <rect x="140" y="320" width="420" height="24" fill="#101018"/>
+                            <rect x="150" y="326" width="60" height="12" rx="4" fill="rgba(255,255,255,.06)"/>
+                            <rect x="154" y="329" width="42" height="6"  rx="3" fill="rgba(255,255,255,.35)"/>
+                            <rect x="216" y="326" width="66" height="12" rx="4" fill="rgba(124,92,255,.18)"/>
+                            <rect x="220" y="329" width="48" height="6"  rx="3" fill="rgba(124,92,255,.8)"/>
+                            <!-- Terminal lines -->
+                            <rect x="150" y="354" width="14" height="7" rx="3.5" fill="rgba(45,226,230,.7)"/>
+                            <rect x="170" y="354" width="96" height="7" rx="3.5" fill="rgba(255,255,255,.5)"/>
+                            <rect x="150" y="368" width="148" height="7" rx="3.5" fill="rgba(45,226,230,.5)"/>
+                            <rect x="305" y="368" width="70"  height="7" rx="3.5" fill="rgba(255,255,255,.3)"/>
+
+                            <!-- Status bar -->
+                            <rect x="140" y="392" width="420" height="20" fill="url(#ed-status)"/>
+                            <rect x="150" y="397" width="60" height="6" rx="3" fill="rgba(255,255,255,.75)"/>
+                            <rect x="220" y="397" width="40" height="6" rx="3" fill="rgba(255,255,255,.55)"/>
+                            <rect x="470" y="397" width="52" height="6" rx="3" fill="rgba(255,255,255,.65)"/>
+
+                            <!-- Glow overlay -->
+                            <rect width="560" height="430" fill="url(#ed-glow)" opacity=".4"/>
+                        </g>
+
+                        <defs>
+                            <radialGradient id="ed-glow" cx="75%" cy="30%" r="55%">
+                                <stop offset="0%"   stop-color="#7c5cff" stop-opacity=".10"/>
+                                <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </div>
             </div>
         </section>
 
